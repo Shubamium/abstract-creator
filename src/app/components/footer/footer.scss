@@ -1,0 +1,17 @@
+#footer {
+  .footer-g {
+    width: 20%;
+    height: 140px;
+    position: fixed;
+    bottom: 0%;
+    object-fit: contain;
+    object-position: left bottom;
+    left: 0%;
+
+    &.r {
+      object-position: right bottom;
+      left: initial;
+      right: 0%;
+    }
+  }
+}

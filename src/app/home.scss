@@ -1,0 +1,43 @@
+#page_home {
+  padding: 100px 0;
+  #main-section {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    article {
+      .panel-content {
+        padding-top: 2em;
+        h3 {
+          font-size: 2.2rem;
+        }
+        p {
+          line-height: 1.1;
+        }
+      }
+      .actions {
+        padding: 1em 0;
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+      }
+    }
+    figure {
+      img {
+        max-height: 500px;
+        scale: 1.2;
+        animation: hero-fig 3s infinite alternate-reverse steps(5);
+        @keyframes hero-fig {
+          from {
+            rotate: 0deg;
+          }
+          to {
+            rotate: 40deg;
+          }
+        }
+      }
+    }
+  }
+}

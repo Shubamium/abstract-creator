@@ -1,0 +1,84 @@
+#header {
+  background: url("/bg/bg_pixel.png"),
+    linear-gradient(to bottom, #3b2a50, #56008d);
+  background-size: contain;
+  border-top: 5px solid #e4009f;
+  border-bottom: 5px solid #e4009f;
+  // min-height: 140px;
+  padding: 1em;
+  box-shadow: 0px 0px 24px 15px rgb(105, 4, 85);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // border-radius: 0 0;
+  .main-heading {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 0px rgb(53, 10, 69), 2px 2px 14px #fff9fb31;
+    color: #e4009f;
+    .purple {
+      color: #b400ff;
+    }
+    .red {
+      color: #e6356c;
+    }
+    .blue {
+      color: #8adcec;
+    }
+  }
+
+  .title-text {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-top: 0.35em;
+    .gummy {
+      rotate: 14deg;
+      width: 70px;
+      animation: gummy 2s infinite alternate-reverse steps(5);
+
+      @keyframes gummy {
+        from {
+          rotate: -30deg;
+        }
+        to {
+          rotate: 30deg;
+        }
+      }
+      &.l {
+        scale: 1.1;
+        rotate: -14deg;
+        animation-direction: alternate;
+        transform: translateX(6%);
+      }
+    }
+  }
+  #nav {
+    display: flex;
+    gap: 1em;
+    .btn-head-nav {
+      background: #c995fa;
+      font-family: var(--fontH);
+      color: #774ab8;
+      letter-spacing: 1px;
+      font-size: 1.5rem;
+      padding: 0.05em 0.4em;
+      padding-top: 0.25em;
+      line-height: 90%;
+      padding-right: 3em;
+      border: 4px solid #d8b7f7;
+      border-radius: 0.5em;
+      box-shadow: 2px 4px 0px #774ab8, 0px 1px 5px 2px rgb(67, 7, 79);
+
+      &:hover,
+      &.active {
+        background-color: #761a65;
+        border-color: #e6356c;
+        color: #e6356c;
+        box-shadow: 2px 4px 0px #e6356c, 0px 1px 5px 2px rgb(67, 7, 79);
+      }
+    }
+  }
+}
