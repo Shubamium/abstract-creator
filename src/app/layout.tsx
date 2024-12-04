@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.scss";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import GummySpawn from "./components/gummySpawn/GummySpawn";
 
 const dos = localFont({
   src: "./fonts/dos.ttf",
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <GummySpawn />
       </body>
     </html>
   );

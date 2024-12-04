@@ -1,0 +1,26 @@
+.gummy-spawner {
+  .gummy {
+    animation: fallDown 5s linear forwards;
+    position: fixed;
+    z-index: 20;
+    filter: drop-shadow(0px 0px 4px black);
+    width: 150px;
+    left: 20%;
+    &:hover {
+      scale: 1.1;
+      // filter: scale(120%);
+    }
+    transition: scale 200ms ease;
+    cursor: pointer;
+    rotate: -320deg;
+    @keyframes fallDown {
+      from {
+        top: 0vh;
+      }
+      to {
+        top: 90vh;
+        rotate: 0deg;
+      }
+    }
+  }
+}
