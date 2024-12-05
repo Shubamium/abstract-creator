@@ -79,11 +79,71 @@ body {
   }
 }
 
+.ear-panel {
+  position: relative;
+  .ear {
+    position: absolute;
+    left: -80px;
+    top: -80px;
+    z-index: -20;
+    scale: 0.8;
+    rotate: -2deg;
+    &.r {
+      rotate: 2deg;
+      left: initial;
+      right: -80px;
+    }
+  }
+}
+
+.eared {
+  &::before {
+    width: 80px;
+    height: 80px;
+    background: var(--accent);
+    position: absolute;
+    left: -40px;
+    top: -40px;
+    content: "";
+    border: 15px solid rgba(255, 255, 255, 0.302);
+    border-radius: 50%;
+    border-right: none;
+    border-bottom: none;
+    outline-offset: -15px;
+    z-index: -2;
+  }
+
+  &::after {
+    width: 80px;
+    height: 80px;
+    background: var(--accent);
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    content: "";
+    border: 15px solid rgba(255, 255, 255, 0.302);
+    border-radius: 50%;
+    border-left: none;
+    border-bottom: none;
+    outline-offset: -15px;
+    z-index: -2;
+  }
+
+  &.small {
+    &::before,
+    &::after {
+      scale: 0.7;
+    }
+  }
+}
+
 .win-panel {
   background: #e4b6fe;
   border: 6px solid #e7ccff;
   color: #774ab8;
   box-shadow: 7px 4px 0px rgba(0, 0, 0, 0.194);
+  // position: relative;
+  // z-index: -2;
 
   .panel-head {
     background: linear-gradient(to right, #bc7cfa, #6e499432);

@@ -7,9 +7,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    article {
+    .ear-panel {
       rotate: -2deg;
       animation: breathe 1s infinite alternate-reverse linear;
+    }
+    article {
       @keyframes breathe {
         from {
           scale: 1;

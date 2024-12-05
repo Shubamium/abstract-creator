@@ -19,6 +19,7 @@ export default function Figure({ figures }: Props) {
   };
   return (
     <div className="panel-content">
+      <img src="/de/figure_top.png" alt="" className="decor_figure" />
       <div className="main-part">
         <div className="figure-img">
           <img

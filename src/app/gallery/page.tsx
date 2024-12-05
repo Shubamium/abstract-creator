@@ -55,6 +55,7 @@ export default function GalleryPage({}: Props) {
     <main id="page_gallery">
       <section id="gallery-selection">
         <article className="title-part">
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
           <h2>GALLERY</h2>
           <p>
             (Gallery Description) ipsum dolor sit amet, consectetur adipiscing
@@ -67,6 +68,19 @@ export default function GalleryPage({}: Props) {
         </article>
         <figure>
           <img src="/gfx/gallery_px.png" alt="" className="gallery" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+          <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
+
+          <img src="/de/sparklestars.gif" alt="" className="decor_stars" />
+          <img src="/de/bearbal.gif" alt="" className="decor_bear" />
+          <img src="/de/top-gallerydecor.png" alt="" className="decor_ac" />
         </figure>
       </section>
       <section id="explanation">
@@ -219,6 +233,12 @@ export default function GalleryPage({}: Props) {
               })}
           </div>
         </div>
+      </section>
+
+      <section className="back">
+        <a href="#">
+          <img src="/de/back_bear.gif" alt="" />
+        </a>
       </section>
     </main>
   );

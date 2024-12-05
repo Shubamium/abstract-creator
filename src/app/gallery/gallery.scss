@@ -42,9 +42,35 @@
         border-radius: 1em;
         border: 4px solid #e6356c;
       }
+      .decor_stars {
+        position: absolute;
+        top: -2%;
+        left: -5%;
+        rotate: -10deg;
+        opacity: 0.5;
+      }
+      .decor_bear {
+        position: absolute;
+        bottom: 20%;
+        right: -5%;
+        rotate: -10deg;
+      }
+      .decor_ac {
+        position: absolute;
+        bottom: 95%;
+        z-index: -2;
+        right: 5%;
+        // rotate: -10deg;
+      }
     }
   }
 
+  .back {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+  }
   #explanation {
     display: flex;
     align-items: center;

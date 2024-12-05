@@ -11,24 +11,31 @@ export default async function ShopPage({}: Props) {
 
   return (
     <main id="page_shop">
-      <section id="shop-heading">
-        <article>
-          <h2>SHOP</h2>
-          <p>
-            (SHOP Description) ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-          </p>
-        </article>
-        <figure>
-          <img src="/bg/pfp1.png" alt="" />
-        </figure>
-      </section>
+      <div className="ear-panel">
+        <img src="/de/ear_r.png" alt="" className={"ear l"} />
+        <img src="/de/ear_r.png" alt="" className={"ear r"} />
+        <section id="shop-heading">
+          {/* <div className="ear-panel"> */}
+
+          <article>
+            <h2>SHOP</h2>
+            <p>
+              (SHOP Description) ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.
+            </p>
+          </article>
+          {/* </div> */}
+          <figure>
+            <img src="/bg/pfp1.png" alt="" />
+          </figure>
+        </section>
+      </div>
 
       <section id="product-list">
         {shop &&
@@ -45,7 +52,7 @@ export default async function ShopPage({}: Props) {
                   </div>
                   <div className="detail">
                     <h2>${prod.price}</h2>
-                    <a href={prod.link} target="_blank" className="btn">
+                    <a href={prod.product_link} target="_blank" className="btn">
                       BUY
                     </a>
                   </div>

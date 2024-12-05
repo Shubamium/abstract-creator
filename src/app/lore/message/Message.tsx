@@ -1,6 +1,6 @@
 "use client";
 import { GetMessages, PostReply, SendMessage } from "@/db/messages";
-import React, { useEffect, useState } from "react";
+import React, { CSSProperties, useEffect, useState } from "react";
 
 type Props = {};
 
@@ -126,9 +126,11 @@ export default function Message({}: Props) {
             </button>
           </div>
         </div>
+        <img src="/de/gpack.png" alt="" className="gpack l" />
+        <img src="/de/gpack2.png" alt="" className="gpack r" />
       </div>
 
-      <div className="message-board">
+      <div className="message-board eared">
         <h2 className="title">MESSAGE LIST</h2>
         <div className="message-list">
           {messagesList &&
@@ -171,10 +173,13 @@ function MessageItem({ mess, onUpdate }: MessageItemProps) {
     <div className={`message ${showReply ? "open" : "closed"}`} key={mess._id}>
       {/* Main Message */}
       <div
-        className="btn main"
-        style={{
-          background: mess.color,
-        }}
+        className="btn main eared small"
+        style={
+          {
+            background: mess.color,
+            "--accent": mess.color,
+          } as CSSProperties
+        }
         onClick={() => {
           setShowReply((val) => !val);
         }}

@@ -1,9 +1,14 @@
 #page_shop {
   padding-top: 4em;
+
+  .ear-panel {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: min(90%, 1100px);
+  }
   #shop-heading {
     padding: 1em;
-    margin: 0 auto;
-    max-width: min(90%, 1100px);
+
     display: flex;
     background: #761a65;
     border: 4px solid #e6356c;
@@ -11,6 +16,20 @@
     color: #e6356c;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    // .ear {
+    //   position: absolute;
+    //   // z-index: -2;
+    //   top: -50px;
+    //   width: 200px;
+    //   height: 200px;
+    //   left: -50px;
+    // }
+    .ear {
+      .r {
+        right: -50px;
+      }
+    }
+
     article {
       padding: 0.8em 2em;
     }
