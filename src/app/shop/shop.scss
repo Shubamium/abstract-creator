@@ -5,6 +5,12 @@
     margin: 0 auto;
     margin-top: 50px;
     max-width: min(90%, 1100px);
+    @media screen and (max-width: 550px) {
+      max-width: 100%;
+      .ear {
+        display: none;
+      }
+    }
   }
   #shop-heading {
     padding: 1em;
@@ -24,6 +30,17 @@
     //   height: 200px;
     //   left: -50px;
     // }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      figure {
+        margin-bottom: -100px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+    }
     .ear {
       .r {
         right: -50px;
@@ -32,6 +49,9 @@
 
     article {
       padding: 0.8em 2em;
+      @media screen and (max-width: 1200px) {
+        padding: 0;
+      }
     }
     figure {
       display: flex;
@@ -68,6 +88,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
+
+    padding-bottom: 200px;
+    @media screen and (max-width: 768px) {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      justify-content: center;
+    }
     .product {
       background: #761a65;
       border: 5px solid #e6356c;

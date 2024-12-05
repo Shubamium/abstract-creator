@@ -78,6 +78,8 @@ body {
     }
   }
 }
+main {
+}
 
 .ear-panel {
   position: relative;
@@ -176,6 +178,10 @@ body {
   font-size: 1.2rem;
   font-family: var(--fontP);
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 }
 .input {
   background: linear-gradient(to bottom, #ff5bac, #bd8fe4);
@@ -185,6 +191,7 @@ body {
   border-radius: 0.5em;
   border: 3px solid #61128e;
   margin: 0.5em 0;
+
   label {
     font-family: var(--fontH);
     font-size: 1.2rem;
@@ -205,12 +212,27 @@ body {
     min-height: 150px;
     resize: none;
   }
+
+  @media screen and (max-width: 550px) {
+    label {
+      font-size: 0.9rem;
+    }
+    input,
+    textarea {
+      font-size: 1rem;
+    }
+  }
 }
 
 .reply-bar {
   background: #e4b6fe;
   padding: 1em;
   border-radius: 1em;
+  @media screen and (max-width: 550px) {
+    h2 {
+      font-size: 1rem;
+    }
+  }
   h2 {
     color: #774ab8;
   }

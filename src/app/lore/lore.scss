@@ -6,6 +6,13 @@
     max-width: min(950px, 80%);
     margin: 0 auto;
     margin-top: 50px;
+    @media screen and (max-width: 768px) {
+      max-width: 95%;
+    }
+
+    @media screen and (max-width: 550px) {
+      overflow-x: hidden;
+    }
     .panel-content {
       .decor_figure {
         position: absolute;
@@ -41,6 +48,11 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 0.5em;
+
+          @media screen and (max-width: 550px) {
+            display: flex;
+            flex-direction: column;
+          }
           .info {
             text-align: center;
             background: linear-gradient(to bottom, #ff5bac, #bd8fe4);
@@ -85,6 +97,22 @@
         gap: 1em;
         // padding: 1em 0;
         padding-top: 2em;
+
+        @media screen and (max-width: 550px) {
+          .btn-basic {
+            // font-size: 1rem;
+            padding: 0.1em;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 620px) {
+      .panel-content {
+        .main-part {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }
@@ -93,10 +121,17 @@
     background: url("/bg/bg_cd.png"), #302751;
     border-top: 2px solid #e6356c;
     border-bottom: 2px solid #e6356c;
+    @media screen and (max-width: 550px) {
+      overflow-x: hidden;
+    }
+
     .confine {
       max-width: min(80%, 1000px);
       margin: 0 auto;
       padding: 2em 0;
+      @media screen and (max-width: 550px) {
+        max-width: 90%;
+      }
       .heading {
         text-align: center;
         h2 {
@@ -107,6 +142,14 @@
         p {
           color: white;
         }
+
+        @media screen and (max-width: 550px) {
+          h2 {
+            font-size: 2rem;
+          }
+          p {
+          }
+        }
       }
 
       .time-list {
@@ -114,8 +157,15 @@
         flex-direction: column;
         gap: 0.5em;
         padding: 2em 0;
+        @media screen and (max-width: 768px) {
+          gap: 3em;
+        }
+
         .time {
-          max-width: 60%;
+          @media screen and (min-width: 768px) {
+            max-width: 60%;
+          }
+          width: 100%;
           background: black;
           color: rgba(0, 0, 0, 0.591);
           padding: 2em;
@@ -126,12 +176,22 @@
           h3 {
             font-size: 3rem;
           }
+
+          @media screen and (max-width: 768px) {
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
           .arrow {
             position: absolute;
             top: 99%;
             right: 0%;
             path {
               fill: var(--accent);
+            }
+
+            @media screen and (max-width: 550px) {
+              rotate: 55deg;
             }
           }
           @extend .btn;
@@ -143,6 +203,10 @@
               scale: -1 1;
               right: initial;
               left: 0%;
+
+              @media screen and (max-width: 550px) {
+                rotate: -55deg;
+              }
             }
           }
         }
@@ -152,10 +216,15 @@
 
   #message {
     max-width: min(900px, 80%);
+    @media screen and (max-width: 420px) {
+      max-width: 95%;
+    }
     margin: 0 auto;
     .win-panel {
       .panel-content {
-        max-width: 80%;
+        @media screen and (min-width: 768px) {
+          max-width: 80%;
+        }
         margin: 0 auto;
 
         .info {
@@ -169,14 +238,27 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 1em;
+
+          @media screen and (max-width: 620px) {
+            display: flex;
+            flex-direction: column;
+          }
         }
 
         .action {
+          flex-wrap: wrap;
           display: flex;
+          gap: 1em;
+          @media screen and (max-width: 550px) {
+            justify-content: center;
+          }
           justify-content: space-between;
           .color-select {
             display: flex;
             flex-direction: column;
+            @media screen and (max-width: 550px) {
+              text-align: center;
+            }
             p {
               font-family: var(--fontH);
               font-weight: bold;
@@ -222,6 +304,7 @@
       position: relative;
       --accent: #e6356c;
       margin-top: 100px;
+
       .title {
         color: #e4009f;
         text-align: center;
@@ -235,6 +318,9 @@
         // padding: 4em;
         max-width: 80%;
         margin: 0 auto;
+        @media screen and (max-width: 768px) {
+          max-width: 95%;
+        }
       }
       .message {
         text-align: left;
@@ -253,6 +339,16 @@
           border-radius: 1em;
           position: relative;
           z-index: 1;
+
+          @media screen and (max-width: 768px) {
+            h2 {
+              font-size: 0.8rem;
+              letter-spacing: 2px;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
           &:hover {
             scale: 1.01;
           }
@@ -282,12 +378,26 @@
           margin-left: 150px;
           overflow: hidden;
           transition: all 500ms ease;
+
+          @media screen and (max-width: 768px) {
+            margin-left: 20px;
+          }
         }
         .reply {
           // background: #e4009f;
           color: #0605098e;
           padding: 1em;
           border-radius: 1em;
+
+          @media screen and (max-width: 768px) {
+            h2 {
+              font-size: 0.8rem;
+              letter-spacing: 2px;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
         }
       }
     }

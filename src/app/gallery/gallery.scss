@@ -1,11 +1,21 @@
 #page_gallery {
-  padding: 100px;
+  @media screen and (min-width: 1024px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 100px 0px;
+  }
   #gallery-selection {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 1em;
     max-width: min(1000px, 80%);
     margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
     align-items: center;
     article {
       background: #761a65;
@@ -63,6 +73,15 @@
         // rotate: -10deg;
       }
     }
+
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      .decor-sparkles {
+        position: absolute;
+      }
+    }
   }
 
   .back {
@@ -76,6 +95,12 @@
     align-items: center;
     justify-content: center;
     margin: 150px 0;
+    text-align: center;
+    @media screen and (max-width: 550px) {
+      p {
+        font-size: 0.8rem;
+      }
+    }
     img {
       position: absolute;
       width: min(80%, 900px);
@@ -93,9 +118,27 @@
     max-width: min(80%, 800px);
     margin: 0 auto;
     gap: 3em;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .gallery-item {
       width: 400px;
       height: 400px;
+
+      @media screen and (max-width: 1024px) {
+        width: 320px;
+        height: 320px;
+      }
+      // @media screen and (max-width: 768px) {
+      //   width: 250px;
+      //   height: 250px;
+      //   .strip {
+      //     scale: 0.8;
+      //   }
+      // }
       // background: white;
       border: 20px solid black;
       border-image: url("/de/frame-border.png");
@@ -154,11 +197,17 @@
       // background: red;
       z-index: 100;
 
+      @media screen and (max-width: 1024px) {
+        width: 100vw;
+      }
       .art-part {
-        margin-top: 5vh;
         width: 50vw;
         height: 80vh;
         margin: 5vh auto;
+        @media screen and (max-width: 1024px) {
+          height: 80vh;
+          width: 100vw;
+        }
         img {
           object-fit: contain;
           width: 100%;
@@ -172,6 +221,14 @@
         text-align: center;
         color: white;
         font-size: 1.2rem;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 0.8rem;
+          opacity: 0.8;
+        }
+        @media screen and (max-width: 550px) {
+          font-size: 0.6rem;
+        }
       }
 
       .comments {
@@ -182,12 +239,43 @@
         flex-direction: column;
         gap: 1em;
         margin-bottom: 200px;
+        @media screen and (max-width: 1024px) {
+          max-width: 80%;
+        }
+        @media screen and (max-width: 550px) {
+          max-width: 90%;
+        }
         .comment {
           padding: 1em;
           background: #e4b6fe;
           border-radius: 1em;
           color: rgba(0, 0, 0, 0.484);
           box-shadow: 0px 0px 4px black;
+
+          @media screen and (max-width: 550px) {
+            h2 {
+              font-size: 1rem;
+              letter-spacing: 2px;
+            }
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+
+        @media screen and (max-width: 550px) {
+          .reply-bar {
+            .action {
+              display: flex;
+              flex-direction: column;
+              gap: 1em;
+              justify-content: center;
+              text-align: center;
+              .colors {
+                justify-content: center;
+              }
+            }
+          }
         }
       }
     }

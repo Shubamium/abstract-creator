@@ -48,7 +48,7 @@ export default async function ShopPage({}: Props) {
                 <div className="prod-info">
                   <div className="info">
                     <h2>{prod.name}</h2>
-                    <p>{prod.description}</p>
+                    <p>{prod.decription}</p>
                   </div>
                   <div className="detail">
                     <h2>${prod.price}</h2>
