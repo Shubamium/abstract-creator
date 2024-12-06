@@ -121,7 +121,10 @@
       .prod-info {
         margin: 1em;
         color: #e6356c;
-
+        p {
+          font-size: 0.75rem;
+          letter-spacing: -1px;
+        }
         .detail {
           display: flex;
           justify-content: space-between;

@@ -41,7 +41,7 @@ export default async function ShopPage({}: Props) {
         {shop &&
           shop.map((prod: any) => {
             return (
-              <div className="btn product" key={prod._id}>
+              <div className=" product" key={prod._id}>
                 <div className="prod-img">
                   <img src={prod.image && urlFor(prod.image).url()} alt="" />
                 </div>
