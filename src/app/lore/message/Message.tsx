@@ -56,10 +56,9 @@ export default function Message({}: Props) {
           <div className="info">
             <h2>LEAVE A MESSAGE</h2>
             <p>
-              (CONTACT Description) ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              Here you can buy cute little plushies that are Traumatize from IRS
+              To drink your bones and shirts that got my face on them and Vtuber
+              debut Mugs - Collectible Set And REALLY COOL PHONE CASE
             </p>
           </div>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./home.scss";
 export default function Home() {
   return (
@@ -14,16 +15,21 @@ export default function Home() {
             <div className="panel-content">
               <h3>WELCOME TO MY SITE</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillu.
+                IH LITTLE GUMMIES so this my site its supper cool you can buy
+                <strong>little gummy plushies</strong> that are wanted in 49
+                states for drinking bones and <strong>look at art</strong> and
+                see when I post videos <strong>LEAVE A MESSAGE</strong> i know
+                pretty cool that's not the best part you can look at{" "}
+                <strong>my lore</strong> what are you waiting for go look
               </p>
 
               <div className="actions">
-                <button className="btn btn-basic">Button Here</button>
-                <button className="btn btn-basic">Learn more</button>
+                <Link href={"/gallery"} className="btn btn-basic">
+                  View gallery
+                </Link>
+                <Link href={"/lore"} className="btn btn-basic">
+                  Learn more
+                </Link>
               </div>
             </div>
           </article>

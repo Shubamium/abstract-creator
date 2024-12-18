@@ -58,11 +58,9 @@ export default function GalleryPage({}: Props) {
           <img src="/de/ampinksparkles.gif" alt="" className="decor_sparkles" />
           <h2>GALLERY</h2>
           <p>
-            (Gallery Description) ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit.
+            showcases a variety of artistic designs with pics of my everyday
+            Gummy bear life like when i sleep or just vibing in the void of
+            space
           </p>
           <img src="/de/gummy_set.png" alt="" />
         </article>

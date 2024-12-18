@@ -37,12 +37,8 @@ export default async function LorePage({}: Props) {
         <div className="confine">
           <div className="heading">
             <h2>TIMELINE</h2>
-            <p>
-              TIMELINE Description ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              labor
-            </p>
+            <p>Videos every Wednesday at 6:30 PM</p>
+            <p>Shopping site will be open 24/7</p>
           </div>
           <div className="time-list">
             {timelines &&

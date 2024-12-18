@@ -20,14 +20,9 @@ export default async function ShopPage({}: Props) {
           <article>
             <h2>SHOP</h2>
             <p>
-              (SHOP Description) ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum.
+              Here you can buy cute little plushies that are Traumatize from IRS
+              To drink your bones and shirts that got my face on them and Vtuber
+              debut Mugs - Collectible Set And REALLY COOL PHONE CASE
             </p>
           </article>
           {/* </div> */}
